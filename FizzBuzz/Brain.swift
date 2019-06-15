@@ -11,7 +11,7 @@ import Foundation
 class Brain {
     
     func isDivisibleBy(divisor: Int, number: Int) -> Bool {
-        if number & divisor == 0{
+        if number % divisor == 0{
             return true
         }else{
             return false
