@@ -12,8 +12,8 @@
 		430E619D22B52B16009A9F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430E619B22B52B16009A9F95 /* Main.storyboard */; };
 		430E619F22B52B18009A9F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430E619E22B52B18009A9F95 /* Assets.xcassets */; };
 		430E61A222B52B18009A9F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430E61A022B52B18009A9F95 /* LaunchScreen.storyboard */; };
-		430E61AD22B52B18009A9F95 /* FizzBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E61AC22B52B18009A9F95 /* FizzBuzzTests.swift */; };
-		430E61B822B52B18009A9F95 /* FizzBuzzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E61B722B52B18009A9F95 /* FizzBuzzUITests.swift */; };
+		430E61C622B52C85009A9F95 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E61C522B52C85009A9F95 /* BrainTests.swift */; };
+		430E61C822B52E1F009A9F95 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430E61C722B52E1F009A9F95 /* Brain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +42,11 @@
 		430E61A122B52B18009A9F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		430E61A322B52B18009A9F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		430E61A822B52B18009A9F95 /* FizzBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		430E61AC22B52B18009A9F95 /* FizzBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzTests.swift; sourceTree = "<group>"; };
 		430E61AE22B52B18009A9F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		430E61B322B52B18009A9F95 /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		430E61B722B52B18009A9F95 /* FizzBuzzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzzUITests.swift; sourceTree = "<group>"; };
 		430E61B922B52B18009A9F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		430E61C522B52C85009A9F95 /* BrainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
+		430E61C722B52E1F009A9F95 /* Brain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +103,7 @@
 				430E619E22B52B18009A9F95 /* Assets.xcassets */,
 				430E61A022B52B18009A9F95 /* LaunchScreen.storyboard */,
 				430E61A322B52B18009A9F95 /* Info.plist */,
+				430E61C722B52E1F009A9F95 /* Brain.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -110,8 +111,8 @@
 		430E61AB22B52B18009A9F95 /* FizzBuzzTests */ = {
 			isa = PBXGroup;
 			children = (
-				430E61AC22B52B18009A9F95 /* FizzBuzzTests.swift */,
 				430E61AE22B52B18009A9F95 /* Info.plist */,
+				430E61C522B52C85009A9F95 /* BrainTests.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -119,7 +120,6 @@
 		430E61B622B52B18009A9F95 /* FizzBuzzUITests */ = {
 			isa = PBXGroup;
 			children = (
-				430E61B722B52B18009A9F95 /* FizzBuzzUITests.swift */,
 				430E61B922B52B18009A9F95 /* Info.plist */,
 			);
 			path = FizzBuzzUITests;
@@ -196,6 +196,7 @@
 					};
 					430E61A722B52B18009A9F95 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 430E619322B52B16009A9F95;
 					};
 					430E61B222B52B18009A9F95 = {
@@ -257,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				430E619A22B52B16009A9F95 /* ViewController.swift in Sources */,
+				430E61C822B52E1F009A9F95 /* Brain.swift in Sources */,
 				430E619822B52B16009A9F95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430E61AD22B52B18009A9F95 /* FizzBuzzTests.swift in Sources */,
+				430E61C622B52C85009A9F95 /* BrainTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				430E61B822B52B18009A9F95 /* FizzBuzzUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +440,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.apps.FizzBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -457,6 +459,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.apps.FizzBuzz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -469,6 +472,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
@@ -479,6 +483,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.bahrami.apps.FizzBuzzTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FizzBuzz.app/FizzBuzz";
@@ -490,6 +495,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6F4VU669F;
 				INFOPLIST_FILE = FizzBuzzTests/Info.plist;
