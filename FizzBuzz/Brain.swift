@@ -20,8 +20,10 @@ class Brain {
             return "FizzBuzz"
         }else if isDivisibleBy(divisor: 5, number: number){
             return "Buzz"
-        }else{
+        }else if isDivisibleBy(divisor: 3, number: number){
             return "Fizz"
+        }else{
+            return "\(number)"
         }
     }
 }
