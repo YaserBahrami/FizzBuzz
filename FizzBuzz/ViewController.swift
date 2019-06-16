@@ -21,8 +21,11 @@ class ViewController: UIViewController {
     }
     
     func play(move: String){
-        _ = game!.play(move: move)
-        gameScore = game?.score
+        guard let _game = game else{
+            print("Game is nil!")
+            return
+        }
+        gameScore = _game.play(move: move).score
     }
 
 
