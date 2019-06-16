@@ -10,7 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var gameScore: Int?
+    @IBOutlet weak var numberButton: UIButton!
+    
+    var gameScore: Int?{
+        didSet{
+            numberButton.setTitle("1", for: .normal)
+            
+        }
+    }
+    
     var game: Game?
     
     override func viewDidLoad() {
@@ -28,6 +36,10 @@ class ViewController: UIViewController {
         gameScore = _game.play(move: move).score
     }
 
-
+    @IBAction func numberButtonTapped(_ sender: UIButton) {
+        play(move: "1")
+        
+    }
+    
 }
 
