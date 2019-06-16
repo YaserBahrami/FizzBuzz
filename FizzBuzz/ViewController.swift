@@ -12,10 +12,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var numberButton: UIButton!
     
-    var gameScore: Int?{
-        didSet{
+    var gameScore: Int? {
+        didSet {
             numberButton.setTitle("1", for: .normal)
-            
         }
     }
     
@@ -23,9 +22,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gameScore = 0
+        
         game = Game()
-        // Do any additional setup after loading the view.
+        
+        guard let _game = game else {
+            print("Game is nil")
+            return
+        }
+        
+        gameScore = _game.score
+        
     }
     
     func play(move: String){
@@ -34,10 +40,15 @@ class ViewController: UIViewController {
             return
         }
         gameScore = _game.play(move: move).score
+        numberButton.setTitle("\(gameScore!)", for: .normal)
     }
 
     @IBAction func numberButtonTapped(_ sender: UIButton) {
-        play(move: "1")
+        guard let _gameScore = gameScore else{
+            print("Game score is nil")
+            return
+        }
+        play(move: "\(_gameScore + 1)")
         
     }
     
