@@ -23,18 +23,21 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydz-dn-JON">
                                         <rect key="frame" x="173.5" y="0.0" width="160.5" height="160.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzButton"/>
                                         <state key="normal" image="Fizz" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ee3-Hh-7nP">
                                         <rect key="frame" x="0.0" y="173.5" width="160.5" height="160.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="buzzButton"/>
                                         <state key="normal" image="Buzz" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hi-nA-ZZG">
                                         <rect key="frame" x="173.5" y="173.5" width="160.5" height="160.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="fizzBuzzButton"/>
                                         <state key="normal" image="FizzBuzz" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>

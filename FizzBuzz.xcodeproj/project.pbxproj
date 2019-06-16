@@ -17,6 +17,7 @@
 		438A1A6122B555650022438D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A6022B555650022438D /* Game.swift */; };
 		438A1A6322B581B90022438D /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A6222B581B90022438D /* ViewControllerTests.swift */; };
 		438A1A6522B69A270022438D /* ViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A6422B69A270022438D /* ViewControllerUITests.swift */; };
+		438A1A6722B6ADEE0022438D /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A6622B6ADEE0022438D /* Move.swift */; };
 		43DDBF7022B54FE400C14883 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DDBF6F22B54FE400C14883 /* GameTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		438A1A6022B555650022438D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		438A1A6222B581B90022438D /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		438A1A6422B69A270022438D /* ViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUITests.swift; sourceTree = "<group>"; };
+		438A1A6622B6ADEE0022438D /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		43DDBF6F22B54FE400C14883 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				430E61A322B52B18009A9F95 /* Info.plist */,
 				430E61C722B52E1F009A9F95 /* Brain.swift */,
 				438A1A6022B555650022438D /* Game.swift */,
+				438A1A6622B6ADEE0022438D /* Move.swift */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438A1A6722B6ADEE0022438D /* Move.swift in Sources */,
 				430E619A22B52B16009A9F95 /* ViewController.swift in Sources */,
 				430E61C822B52E1F009A9F95 /* Brain.swift in Sources */,
 				430E619822B52B16009A9F95 /* AppDelegate.swift in Sources */,

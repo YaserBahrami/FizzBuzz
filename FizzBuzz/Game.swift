@@ -17,7 +17,7 @@ class Game {
         brain = Brain()
     }
     
-    func play(move: String) -> (status: Bool, score: Int){
+    func play(move: Move) -> (status: Bool, score: Int){
         
         let result = brain.check(number: score + 1)
         if result == move{

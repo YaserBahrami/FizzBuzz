@@ -14,7 +14,11 @@ class ViewController: UIViewController {
     
     var gameScore: Int? {
         didSet {
-            numberButton.setTitle("1", for: .normal)
+            guard let _gameScore = gameScore else {
+                return
+            }
+            
+            numberButton.setTitle("\(_gameScore)", for: .normal)
         }
     }
     
@@ -34,21 +38,16 @@ class ViewController: UIViewController {
         
     }
     
-    func play(move: String){
+    func play(move: Move){
         guard let _game = game else{
             print("Game is nil!")
             return
         }
         gameScore = _game.play(move: move).score
-        numberButton.setTitle("\(gameScore!)", for: .normal)
     }
 
     @IBAction func numberButtonTapped(_ sender: UIButton) {
-        guard let _gameScore = gameScore else{
-            print("Game score is nil")
-            return
-        }
-        play(move: "\(_gameScore + 1)")
+        play(move: .number)
         
     }
     
