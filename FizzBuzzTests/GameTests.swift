@@ -89,6 +89,15 @@ class GameTests: XCTestCase {
         XCTAssertEqual(game.score, 1)
     }
     
+    func testPlayShouldReturnIfMoveRight() {
+        let response = game.play(move: "1")
+        XCTAssertNotNil(response.right)
+    }
+    
+    func testPlayShouldReturnNewScore() {
+        let response = game.play(move: "1")
+        XCTAssertNotNil(response.score)
+    }
     
 
 }
