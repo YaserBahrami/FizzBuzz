@@ -9,7 +9,10 @@
 import XCTest
 
 class ViewControllerUITests: XCTestCase {
-
+    
+    let app = XCUIApplication()
+    let numberButton = XCUIApplication().buttons["numberButton"]
+    
     override func setUp() {
         continueAfterFailure = false
         XCUIApplication().launch()
@@ -20,12 +23,18 @@ class ViewControllerUITests: XCTestCase {
     }
     
     func testTapNumberButtonIncrementsScore() {
-        let app = XCUIApplication()
-        let numberButton = app.buttons["numberButton"]
-        
         numberButton.tap()
         let newScore = numberButton.label
         XCTAssertEqual(newScore, "1")
+    }
+    
+    func testTapNumberButtonTwiceIncrementsTo2(){
+        numberButton.tap()
+        numberButton.tap()
+        let newScore = numberButton.label
+        XCTAssertEqual(newScore, "2")
+        
+        
     }
 
 }
