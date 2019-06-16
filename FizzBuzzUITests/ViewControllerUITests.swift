@@ -12,6 +12,9 @@ class ViewControllerUITests: XCTestCase {
     
     let app = XCUIApplication()
     let numberButton = XCUIApplication().buttons["numberButton"]
+    let fizzButton = XCUIApplication().buttons["fizzButton"]
+    let buzzButton = XCUIApplication().buttons["buzzButton"]
+    let fizzBuzzButton = XCUIApplication().buttons["fizzBuzzButton"]
     
     override func setUp() {
         continueAfterFailure = false
@@ -33,8 +36,15 @@ class ViewControllerUITests: XCTestCase {
         numberButton.tap()
         let newScore = numberButton.label
         XCTAssertEqual(newScore, "2")
-        
-        
     }
+    
+    func testTapNumberButtonTwiceIncrementsTo3(){
+        numberButton.tap()
+        numberButton.tap()
+        fizzButton.tap()
+        let newScore = numberButton.label
+        XCTAssertEqual(newScore, "3")
+    }
+    
 
 }
