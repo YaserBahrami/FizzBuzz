@@ -11,6 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var numberButton: UIButton!
+    @IBOutlet weak var fizzButton: UIButton!
+    
+    @IBOutlet weak var buzzButton: UIButton!
+    
+    @IBOutlet weak var fizzBuzzButton: UIButton!
     
     var gameScore: Int? {
         didSet {
@@ -47,7 +52,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func numberButtonTapped(_ sender: UIButton) {
-        play(move: .number)
+        
+        switch sender {
+        case numberButton:
+            play(move: .number)
+        case fizzButton:
+            play(move: .fizz)
+        case buzzButton:
+            play(move: .buzz)
+        case fizzBuzzButton:
+            play(move: .fizzBuzz)
+        default:
+            print("Invalid selection")
+        }
         
     }
     

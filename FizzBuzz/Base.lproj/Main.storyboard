@@ -27,6 +27,9 @@
                                         <state key="normal" image="Fizz" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1h-hH-tHR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ee3-Hh-7nP">
                                         <rect key="frame" x="0.0" y="173.5" width="160.5" height="160.5"/>
@@ -34,6 +37,9 @@
                                         <state key="normal" image="Buzz" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Wb-2X-vFg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hi-nA-ZZG">
                                         <rect key="frame" x="173.5" y="173.5" width="160.5" height="160.5"/>
@@ -41,6 +47,9 @@
                                         <state key="normal" image="FizzBuzz" backgroundImage="button_border">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ofa-XG-maV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpZ-vO-Rrn">
                                         <rect key="frame" x="0.0" y="0.0" width="160.5" height="160.5"/>
@@ -85,6 +94,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="buzzButton" destination="Ee3-Hh-7nP" id="AjW-cX-Bo8"/>
+                        <outlet property="fizzButton" destination="Ydz-dn-JON" id="K7f-VD-TYD"/>
+                        <outlet property="fizzBuzzButton" destination="7hi-nA-ZZG" id="zVv-CN-fdM"/>
                         <outlet property="numberButton" destination="fpZ-vO-Rrn" id="Ra0-JS-til"/>
                     </connections>
                 </viewController>
