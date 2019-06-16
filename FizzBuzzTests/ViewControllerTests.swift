@@ -25,8 +25,10 @@ class ViewControllerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func test() {
-        XCTAssertTrue(true)
+    func testMove1IncrementsScore() {
+        viewController.play(move: "1")
+        let newScore = viewController.gameScore
+        XCTAssertEqual(newScore, 1)
     }
 
 }
